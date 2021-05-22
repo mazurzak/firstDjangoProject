@@ -13,6 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import math
+
 from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import path, include
@@ -25,5 +27,6 @@ def hello(request, name="World"):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', include('hello.urls')),
-    path('polls/', include('polls.urls'))
-]
+    path('polls/', include('polls.urls')),
+    path('maths/', include('maths.urls')),
+    ]
