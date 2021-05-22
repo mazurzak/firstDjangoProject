@@ -25,5 +25,6 @@ def hello(request, name="World"):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', include('hello.urls')),
-    path('polls/', include('polls.urls'))
+    path('polls/', include('polls.urls')),
+    path('maths/', include('maths.urls')),
 ]
